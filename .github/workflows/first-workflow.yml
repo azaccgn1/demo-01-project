@@ -1,6 +1,9 @@
 name: First Test Workflow
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+
 jobs:
   test:
     runs-on: ubuntu-latest
